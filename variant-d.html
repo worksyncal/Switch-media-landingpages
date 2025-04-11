@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch Media | Med Spa Marketing Specialists</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Variant D specific styles - Minimalist approach */
+    :root {
+      --color-coffee: #3a2a1e;
+      --color-cream: #f9f6f2;
+      --color-sand: #f5f0e8;
+      --color-gold: #d4b174;
+    }
+    
+    body {
+      color: var(--color-coffee);
+      background-color: var(--color-cream);
+      line-height: 1.7;
+    }
+    
+    .container {
+      max-width: 1000px; /* More compact container */
+      padding: 0 32px;
+    }
+    
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(8px);
+      border-radius: 0; /* Sharp corners */
+      border: none;
+      border-bottom: 3px solid var(--color-gold);
+      box-shadow: none;
+    }
+    
+    h1, h2, h3 {
+      font-weight: 500;
+    }
+    
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+    
+    h2 {
+      font-size: 2.4rem;
+      letter-spacing: -0.3px;
+    }
+    
+    .button {
+      background-color: var(--color-coffee);
+      border-radius: 0;
+      padding: 14px 28px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+    
+    .button:hover {
+      background-color: var(--color-gold);
+      transform: translateY(-2px);
+    }
+    
+    .section-title {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 12px;
+    }
+    
+    .section-title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: var(--color-gold);
+    }
+    
+    .text-center .section-title::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .card {
+      border-radius: 0;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    
+    /* Clean grid layout */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    
+    @media (min-width: 768px) {
+      .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 24px;
+    }
+    
+    .feature-icon {
+      font-size: 2rem;
+      color: var(--color-gold);
+    }
+    
+    /* Split section styling */
+    .split-section {
+      display: grid;
+      grid-template-columns: 1fr;
+      min-height: 500px;
+    }
+    
+    @media (min-width: 768px) {
+      .split-section {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    .split-content {
+      padding: 64px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .split-image {
+      background-size: cover;
+      background-position: center;
+      min-height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section - Minimalist approach -->
+  <div class="hero" style="min-height: 90vh;">
+    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1600&auto=format" alt="Luxury spa interior" class="hero-image">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content" style="text-align: left; max-width: 600px; margin-left: 0;">
+        <span class="text-gold text-sm uppercase tracking-wider mb-4 animate-fade-up">Med Spa Marketing Specialists</span>
+        <h1 class="font-display mb-6 animate-fade-up delay-200">Grow Your Med Spa with Data-Driven Marketing</h1>
+        <p class="mb-8 animate-fade-up delay-400" style="font-size: 1.1rem;">Digital marketing strategies that deliver measurable results for med spas and aesthetic clinics</p>
+        <div class="animate-fade-up delay-600">
+          <a href="#contact" class="button">Start Your Growth Journey</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Results Section - New section with clean stats -->
+  <section style="padding: 80px 0; background-color: white;">
+    <div class="container">
+      <div class="grid-cols-1 grid-cols-3-md" style="display: grid; gap: 40px; text-align: center;">
+        <div>
+          <div style="font-size: 3.5rem; font-weight: 600; color: var(--color-gold); margin-bottom: 8px;">157%</div>
+          <p style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Average Booking Increase</p>
+        </div>
+        <div>
+          <div style="font-size: 3.5rem; font-weight: 600; color: var(--color-gold); margin-bottom: 8px;">83%</div>
+          <p style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Revenue Growth</p>
+        </div>
+        <div>
+          <div style="font-size: 3.5rem; font-weight: 600; color: var(--color-gold); margin-bottom: 8px;">12+</div>
+          <p style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Years of Med Spa Expertise</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Split Section - About Us -->
+  <section class="split-section">
+    <div class="split-image" style="background-image: url('https://images.unsplash.com/photo-1583417267826-aebc4d1542e1?w=800&auto=format');"></div>
+    <div class="split-content bg-sand">
+      <span class="text-gold text-sm uppercase tracking-wider mb-4">About Us</span>
+      <h2 class="font-display mb-6 section-title">Med Spa Marketing Experts</h2>
+      <p class="mb-6">Switch Media Marketing specializes exclusively in helping med spas and aesthetic clinics attract high-value clients through strategic digital marketing.</p>
+      <p class="mb-8">Our data-driven approach has helped med spas across the country dramatically increase bookings, revenue, and client retention.</p>
+      <a href="#about" class="button">Learn More About Us</a>
+    </div>
+  </section>
+
+  <!-- Services Section - Featured services in clean layout -->
+  <section style="padding: 100px 0; background-color: white;">
+    <div class="container">
+      <div class="text-center mb-16">
+        <span class="text-gold text-sm uppercase tracking-wider mb-4 block">Our Services</span>
+        <h2 class="font-display mb-6 section-title">Strategic Med Spa Marketing</h2>
+        <p class="max-w-2xl mx-auto mb-16">We provide comprehensive digital marketing solutions tailored to the unique needs of med spas and aesthetic clinics.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="glass-panel feature-item animate-fade-up">
+          <div class="feature-icon">🎯</div>
+          <div>
+            <h3 class="mb-3">Social Media Strategy</h3>
+            <p>Targeted content and engagement strategies that build your brand and attract your ideal clients.</p>
+          </div>
+        </div>
+        <div class="glass-panel feature-item animate-fade-up delay-200">
+          <div class="feature-icon">💻</div>
+          <div>
+            <h3 class="mb-3">High-Converting Websites</h3>
+            <p>Beautiful, functional websites designed to convert visitors into consultations and bookings.</p>
+          </div>
+        </div>
+        <div class="glass-panel feature-item animate-fade-up delay-400">
+          <div class="feature-icon">📈</div>
+          <div>
+            <h3 class="mb-3">Targeted Advertising</h3>
+            <p>Strategic ad campaigns that reach potential clients at the perfect moment in their decision process.</p>
+          </div>
+        </div>
+        <div class="glass-panel feature-item animate-fade-up delay-600">
+          <div class="feature-icon">📧</div>
+          <div>
+            <h3 class="mb-3">Client Nurturing Systems</h3>
+            <p>Email and SMS marketing that builds relationships and encourages repeat visits and referrals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Section - Featured case study -->
+  <section class="bg-sand" style="padding: 100px 0;">
+    <div class="container">
+      <div class="text-center mb-16">
+        <span class="text-gold text-sm uppercase tracking-wider mb-4 block">Case Study</span>
+        <h2 class="font-display mb-6 section-title">Client Success Story</h2>
+        <p class="max-w-2xl mx-auto mb-12">See how we helped one med spa dramatically increase their bookings and revenue.</p>
+      </div>
+
+      <div class="glass-panel" style="overflow: hidden;">
+        <div class="grid-cols-1 grid-cols-2-md" style="display: grid;">
+          <div style="padding: 48px;">
+            <h3 class="font-display mb-4" style="font-size: 1.8rem;">Serenity Med Spa</h3>
+            <p class="mb-4" style="font-weight: 500;">Challenge:</p>
+            <p class="mb-6">Serenity Med Spa was struggling to attract high-value clients and was seeing a decline in bookings for their premium treatments.</p>
+            
+            <p class="mb-4" style="font-weight: 500;">Solution:</p>
+            <p class="mb-6">We implemented a comprehensive digital strategy including:</p>
+            <ul style="margin-bottom: 24px; padding-left: 20px;">
+              <li class="mb-2">Website redesign focused on premium positioning</li>
+              <li class="mb-2">Targeted social media campaigns to affluent demographics</li>
+              <li class="mb-2">Strategic email nurturing sequences for client retention</li>
+            </ul>
+            
+            <p class="mb-4" style="font-weight: 500;">Results:</p>
+            <div style="margin-bottom: 24px;">
+              <div style="font-size: 2.5rem; font-weight: 600; color: var(--color-gold);">157%</div>
+              <p>Increase in premium treatment bookings within 90 days</p>
+            </div>
+          </div>
+          <div style="background: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&auto=format') center/cover;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section - Clean testimonial layout -->
+  <section style="padding: 100px 0; background-color: white;">
+    <div class="container">
+      <div class="text-center mb-16">
+        <span class="text-gold text-sm uppercase tracking-wider mb-4 block">Testimonials</span>
+        <h2 class="font-display mb-6 section-title">What Our Clients Say</h2>
+        <p class="max-w-2xl mx-auto mb-16">Don't take our word for it—hear directly from med spa owners who've worked with us.</p>
+      </div>
+
+      <div class="grid-cols-1 grid-cols-2-md" style="display: grid; gap: 40px;">
+        <div class="glass-panel" style="padding: 40px;">
+          <p class="mb-6" style="font-style: italic; font-size: 1.2rem;">
+            "Working with Switch Media has been transformative for our med spa. Their understanding of our industry and target audience is unmatched. We've seen a significant increase in bookings for our high-ticket treatments."
+          </p>
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&auto=format" alt="Dr. Sarah Johnson" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+            <div>
+              <h3 style="margin: 0; font-size: 1.1rem;">Dr. Sarah Johnson</h3>
+              <p style="margin: 0; font-size: 0.9rem; color: var(--color-gold);">Owner, Radiant Glow Med Spa</p>
+            </div>
+          </div>
+        </div>
+        <div class="glass-panel" style="padding: 40px;">
+          <p class="mb-6" style="font-style: italic; font-size: 1.2rem;">
+            "The return on our marketing investment has been incredible. Their team truly understands how to position a med spa in the luxury market and attract clients who value premium treatments."
+          </p>
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format" alt="Jennifer Martinez" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+            <div>
+              <h3 style="margin: 0; font-size: 1.1rem;">Jennifer Martinez</h3>
+              <p style="margin: 0; font-size: 0.9rem; color: var(--color-gold);">Director, Pure Beauty Clinic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section - New section -->
+  <section class="bg-sand" style="padding: 100px 0;">
+    <div class="container">
+      <div class="text-center mb-16">
+        <span class="text-gold text-sm uppercase tracking-wider mb-4 block">Our Process</span>
+        <h2 class="font-display mb-6 section-title">How We Grow Your Med Spa</h2>
+        <p class="max-w-2xl mx-auto mb-16">Our proven four-step process delivers consistent results for med spas.</p>
+      </div>
+
+      <div class="grid-cols-1 grid-cols-2-md" style="display: grid; gap: 40px;">
+        <div class="glass-panel" style="padding: 32px;">
+          <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--color-gold); display: flex; align-items: center; justify-content: center; font-weight: bold; color: white;">1</div>
+            <h3 style="margin: 0;">Strategic Analysis</h3>
+          </div>
+          <p>We analyze your current marketing, competitors, and target audience to identify growth opportunities.</p>
+        </div>
+        <div class="glass-panel" style="padding: 32px;">
+          <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--color-gold); display: flex; align-items: center; justify-content: center; font-weight: bold; color: white;">2</div>
+            <h3 style="margin: 0;">Custom Strategy Development</h3>
+          </div>
+          <p>We create a tailored marketing plan designed to attract your ideal clients and showcase your unique offerings.</p>
+        </div>
+        <div class="glass-panel" style="padding: 32px;">
+          <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--color-gold); display: flex; align-items: center; justify-content: center; font-weight: bold; color: white;">3</div>
+            <h3 style="margin: 0;">Implementation & Optimization</h3>
+          </div>
+          <p>We execute your marketing plan and continuously optimize based on performance data and client feedback.</p>
+        </div>
+        <div class="glass-panel" style="padding: 32px;">
+          <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--color-gold); display: flex; align-items: center; justify-content: center; font-weight: bold; color: white;">4</div>
+            <h3 style="margin: 0;">Scale & Growth</h3>
+          </div>
+          <p>As results come in, we scale successful campaigns and refine your strategy to maximize ROI and sustainable growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section - Clean, minimal CTA -->
+  <section style="padding: 120px 0; background-color: white; text-align: center;">
+    <div class="container">
+      <h2 class="font-display mb-6" style="font-size: 2.8rem;">Ready to Transform Your Med Spa's Growth?</h2>
+      <p class="max-w-2xl mx-auto mb-12" style="font-size: 1.2rem;">Schedule your free consultation to discover how our data-driven approach can help you attract more high-value clients.</p>
+      <a href="#contact" class="button" style="font-size: 1rem; padding: 16px 32px;">Book Your Free Strategy Call</a>
+    </div>
+  </section>
+</body>
+</html>
